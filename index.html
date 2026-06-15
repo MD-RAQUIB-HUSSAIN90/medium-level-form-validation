@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<htm lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Events Listner</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form novalidate  action="">
+            <h2>Registration Form</h2>
+            <br>
+            <div id="container">
+                <div id="allLabel">
+                    <label for="username">Username: </label>
+                    <label for="contact">Contact: </label>
+                    <label for="password">Password: </label>
+                    <label for="Re-enter-password">Re-enter password: </label>
+                </div>
+                <div id="allInputs">
+                    <input type="text" placeholder="Enter a name" id="username">
+                    <small>Atleast fist letter will be capital</small>
+                    <input type="text" placeholder="Enter contact" id="contact">
+                    <small>Please enter valid number</small>
+                    <input type="password" placeholder="Enter password" id="password">
+                    <input type="password" placeholder="Re enter password" id="reEnterPassword">
+                    <small>Password is not same</small>
+                    <h5 class="emptyAllField"> </h5>
+                </div>
+            </div>
+            <br>
+
+            <input type="submit" id="btn"></input>
+            <h4 class="successMessage"></h4>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</htm>

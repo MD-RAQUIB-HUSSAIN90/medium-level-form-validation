@@ -1,0 +1,151 @@
+/* form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#allLabel {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+
+  justify-content: space-around;
+}
+#allInputs {
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  display: flex;
+  height: 50%;
+  width: 300px;
+}
+
+small {
+  color: red;
+  display: none;
+  font-size: 0.6rem;
+}
+
+.emptyAllField {
+  color: red;
+} */
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+    padding: 20px;
+}
+form{
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+#container{
+display: flex;
+gap: 20px;
+}
+
+#allLabel{
+display: flex;
+flex-direction: column;
+gap: 38px;
+font-weight: 600;
+color: #333;
+}
+
+#allInputs{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+input{
+width: 100%;
+padding: 12px 15px;
+border: 1px solid #dcdcdc;
+border-radius: 8px;
+outline: none;
+font-size: 15px;
+transition: all 0.3s ease;
+}
+
+input:focus{
+border-color: #667eea;
+box-shadow: 0 0 8px rgba(102,126,234,0.3);
+}
+
+#btn{
+width: 100%;
+margin-top: 20px;
+border: none;
+background: #667eea;
+color: white;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#btn:hover{
+transform: translateY(-2px);
+background: #5563d6;
+}
+
+small{
+display: none;
+color: #e63946;
+font-size: 12px;
+margin-top: -5px;
+margin-bottom: 5px;
+}
+
+.emptyAllField{
+display: none;
+color: #e63946;
+font-size: 14px;
+font-weight: 600;
+text-align: center;
+margin-top: 10px;
+}
+
+.successMessage{
+color: rgb(75, 167, 42);
+  font-size: 0.7rem;
+position: relative;
+left: 25%;
+}
+
+@media (max-width: 600px){
+
+
+#container{
+    flex-direction: column;
+    gap: 10px;
+}
+
+#allLabel{
+    gap: 15px;
+}
+
+form{
+    padding: 20px;
+}
+
+
+}
